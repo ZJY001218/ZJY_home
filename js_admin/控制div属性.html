@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 100px;height: 100px; background: paleturquoise;margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <!-- 按钮区域 -->
+    <button onclick="wid()">变宽</button>
+    <button onclick="hei()">变高</button>
+    <button onclick="col()">变色</button>
+    <button onclick="hid()">隐藏</button>
+    <button onclick="one()">重置</button>
+
+    <!-- 盒子 -->
+    <div class="box"></div>
+</body>
+
+<script>
+    // 获取事件源
+    var box=document.querySelector(".box")
+    // 设置宽
+    function wid(){
+        box.style.width="200px"
+    }
+
+    // 设置高
+    function hei(){
+        box.style.height="200px"
+    }
+
+    // 设置颜色
+    function col(){
+        box.style.background="pink"
+    }
+
+    // 隐藏盒子
+    function hid(){
+        box.style.display="none"
+    }
+
+    // 重置
+    function one(){
+        box.style.display="block"
+        box.style.width="100px"
+        box.style.height="100px"
+        box.style.background="paleturquoise"
+    }
+
+</script>
+</html>

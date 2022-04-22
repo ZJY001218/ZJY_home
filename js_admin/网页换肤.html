@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 100px;height: 100px; float: left;margin-right: 10px;}
+        .box1{background-color: paleturquoise;}
+        .box2{background-color: plum;}
+        .box3{background-color: pink;}
+    </style>
+</head>
+<body>
+    <div class="box1" onclick="bag1()"></div>
+    <div class="box2" onclick="bag2()"></div>
+    <div class="box3" onclick="bag3()"></div>
+</body>
+<script>
+    // 获取事件源
+    var body=document.body
+    var box1=document.querySelector(".box1")
+    var box2=document.querySelector(".box2")
+    var box3=document.querySelector(".box3")
+    
+    function bag1(){
+        body.style.background="paleturquoise"
+        box1.style.border="1px solid #000"
+    }
+    function bag2(){
+        body.style.background="plum"
+        box2.style.border="1px solid #000"
+    }
+    function bag3(){
+        body.style.background="pink"
+        box3.style.border="1px solid #000"
+    }
+
+
+</script>
+</html>

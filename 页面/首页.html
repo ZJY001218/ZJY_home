@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            padding: 10px;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        .box1-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .box1s1 {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url(img/1.png);
+        }
+
+        .box1s2 {
+            color: #999;
+            margin-left: 10px;
+        }
+
+        .box1s {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url(img/2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+
+        .box2 {
+            width: 100%;
+            background-color: paleturquoise;
+            height: 200px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            padding-left: 20px;
+            padding-bottom: 30px;
+        }
+
+        .box2-1 {
+            width: 33%;
+            text-align: center;
+        }
+
+        .box2-1 span {
+            font-size: 16px;
+            color: white;
+        }
+
+        .box2-1 p {
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .box23 {
+            position: relative;
+            height: 300px;
+        }
+
+        .box3 {
+            width: 395px;
+            height: 122px;
+            background: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            top: 175px;
+            display: flex;
+            align-items: center;
+        }
+
+        .box3 a {
+            width: 60px;
+            height: 97px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+
+        .box3 span {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            background-image: url(img/3.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .box3 p {
+            color: #000;
+            margin-top: 10px;
+        }
+        .box4{width: 100%;background-color: #fff;padding: 10px;box-sizing: border-box;}
+        .boxb{width: 100%;height: 40px;display: flex;justify-content: space-between;padding: 10px;box-sizing: border-box;}
+        .box4s1{font-size: 18px;}
+        .box4s2{font-size: 14px;color: #999;}
+        .box4-1{width: 100%;height: 140px;box-shadow: 2px 3px 3px 3px #ddd;padding: 10px;box-sizing: border-box;margin-bottom: 10px;}
+        .box4-2{display: flex;justify-content: space-between;margin-bottom: 10px;}
+        .box4-2s{font-weight: normal;}
+        font{color: red;}
+        p{line-height: 30px;}
+
+        .box5{width: 395px;height: 80px;background: white;position: fixed;bottom: 0px;display: flex;padding: 10px;box-sizing: border-box;}
+        .box5 span {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            background-image: url(img/4.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .box5 a {
+            width: 60px;
+            height: 97px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+        .box5 p {
+            color: #000;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部二维码 -->
+    <div class="box1">
+        <div class="box1-left">
+            <span class="box1s1"></span>
+            <span class="box1s2">王明伟医生</span>
+        </div>
+        <span class="box1s"></span>
+    </div>
+
+    <!-- 数字区域 -->
+    <div class="box23">
+        <div class="box2">
+            <div class="box2-1">
+                <span>已签约人数</span>
+                <p>1000</p>
+            </div>
+            <div class="box2-1">
+                <span>待签约人数</span>
+                <p>20</p>
+            </div>
+            <div class="box2-1">
+                <span>居民总数</span>
+                <p>1020</p>
+            </div>
+            <div class="box2-1">
+                <span>待处理服务量</span>
+                <p>10</p>
+            </div>
+            <div class="box2-1">
+                <span>服务总量</span>
+                <p>100</p>
+            </div>
+            <div class="box2-1">
+                <span>服务评价</span>
+                <p>4.9</p>
+            </div>
+        </div>
+
+        <!-- 导航区域 -->
+        <div class="box3">
+            <a href="#">
+                <span></span>
+                <p>新建档案</p>
+            </a>
+            <a href="#">
+                <span></span>
+                <p>签约管理</p>
+            </a>
+            <a href="#">
+                <span></span>
+                <p>服务管理</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- 签约申请 -->
+    <div class="box4">
+        <div class="boxb">
+            <span class="box4s1">签约申请(3)</span>
+            <span class="box4s2">查看全部></span>
+        </div>
+
+        <div class="box4-1">
+            <div class="box4-2">
+                <b>王小明  <span class="box4-2s">58岁</span></b>
+                <font>待审核</font>
+            </div>
+            <p>身份证号 345022********0423</p>
+            <p>签约团队 李明明团队</p>
+            <p>服务包   &nbsp;&nbsp;&nbsp;老年人服务包</p>
+        </div>
+        <div class="box4-1">
+            <div class="box4-2">
+                <b>王小明  <span class="box4-2s">58岁</span></b>
+                <font>待审核</font>
+            </div>
+            <p>身份证号 345022********0423</p>
+            <p>签约团队 李明明团队</p>
+            <p>服务包   &nbsp;&nbsp;&nbsp;老年人服务包</p>
+        </div>
+        <div class="box4-1">
+            <div class="box4-2">
+                <b>王小明  <span class="box4-2s">58岁</span></b>
+                <font>待审核</font>
+            </div>
+            <p>身份证号 345022********0423</p>
+            <p>签约团队 李明明团队</p>
+            <p>服务包   &nbsp;&nbsp;&nbsp;老年人服务包</p>
+        </div>
+        <div class="box4-1">
+            <div class="box4-2">
+                <b>王小明  <span class="box4-2s">58岁</span></b>
+                <font>待审核</font>
+            </div>
+            <p>身份证号 345022********0423</p>
+            <p>签约团队 李明明团队</p>
+            <p>服务包   &nbsp;&nbsp;&nbsp;老年人服务包</p>
+        </div>
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="box5">
+        <a href="#">
+            <span></span>
+            <p>新建档案</p>
+        </a>
+        <a href="#">
+            <span></span>
+            <p>新建档案</p>
+        </a>
+        <a href="#">
+            <span></span>
+            <p>新建档案</p>
+        </a>
+        <a href="#">
+            <span></span>
+            <p>新建档案</p>
+        </a>
+    </div>
+</body>
+
+</html>

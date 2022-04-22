@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 560px;border: 2px solid pink;padding: 10px;box-sizing: border-box;
+        }
+        img{border: 1px solid #ddd;opacity: 0.5;}
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/1.jpg" alt="兰博基尼">
+        <img src="img/1.jpg" alt="兰博基尼">
+        <img src="img/1.jpg" alt="兰博基尼">
+        <img src="img/1.jpg" alt="兰博基尼">
+        <img src="img/1.jpg" alt="兰博基尼">
+        <img src="img/1.jpg" alt="兰博基尼">
+        <img src="img/1.jpg" alt="兰博基尼">
+        <img src="img/1.jpg" alt="兰博基尼">
+    </div>
+
+
+    <script>
+        // 获取事件源
+         let img=document.querySelectorAll("img")
+         
+         for (var i=0;i<img.length;i++){
+             img[i].onmouseover=function(){
+                 this.style.cssText="opacity: 1"
+             }
+             img[i].onmouseout=function(){
+                 this.style.cssText=""
+             }
+         }
+    </script>
+</body>
+</html>

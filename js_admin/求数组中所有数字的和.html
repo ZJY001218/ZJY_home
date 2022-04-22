@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div>
+            <input type="text" value="1,2,3">
+        </div>
+        <p>输入数字求和,数字之间用半角符','隔开</p>
+        <button>求和</button>
+        <b class="sum"></b>
+    </div>
+</body>
+
+<script>
+    window.onload = function () {
+        let inp = document.querySelector("input")
+        inp.onkeyup = function () {
+            this.value = this.value.replace(/[^(\d)|(,)]/, "")
+        }
+        document.querySelector('button').onclick = function () {
+            let sum = 0
+            for (let i in inp.value.split(",")) {
+                sum += Number(inp.value.split(",")[i])
+            }
+            console.log(sum);
+            document.querySelector(".sum").innerHTML = sum
+        }
+    }
+</script>
+
+</html>

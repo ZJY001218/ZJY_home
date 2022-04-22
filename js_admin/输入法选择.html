@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0;}
+    </style>
+</head>
+<body>
+    <button>输入法</button>
+    <div>
+        <ul type="none">
+            <li>手写</li>
+            <li>拼音</li>
+            <li class="li3">关闭</li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // 获取事件源
+    var btn=document.querySelector("button")
+    var div=document.querySelector("div")
+    var close=document.querySelector(".li3")
+    div.style.display="none"
+
+    btn.onclick=function(){
+        div.style.display=div.style.display=="block"?"none":"block"
+    }
+
+    close.onclick=function(){
+        div.style.display="none"
+    }
+    
+</script>
+</html>
